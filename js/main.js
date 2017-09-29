@@ -18,7 +18,7 @@ function bookSearch(){
       console.log(data);
       for(var i = 0; i < data.items.length; i++){
         //store data from book data
-        var aData = data.items[i].volumeinfo;
+        var aData = data.items[i].volumeInfo;
         //create elements
         var newdiv = document.createElement('div');
         var img = document.createElement('img');
@@ -28,8 +28,8 @@ function bookSearch(){
         var anc = document.createElement('a');
 
         //add classes to elements
-        newdiv.className = 'col-sm-12 col-md-8 col-md-offset-2 item';
-        anc.className = 'btn btn-success';
+        newdiv.className = 'col-2 display';
+        anc.className = 'btn btn-info';
 
         //add text to tags
         hd2.innerText = aData.title;
@@ -68,7 +68,7 @@ function bookSearch(){
 
         //add results to the screen
         var results = document.getElementById('results');
-        results.appendChild('newdiv');
+        results.appendChild(newdiv);
       }
     },
   });

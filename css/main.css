@@ -1,9 +1,10 @@
 body {
   background-image: url('../img/books1.jpg'); no-repeat center center fixed;
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -o-background-size: cover;*/
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
 }
 div.header {
   margin-top: 110px;
@@ -14,4 +15,8 @@ div h1 {
 }
 button.btn-info {
   background-color: black;
+}
+div.display {
+  font-family: 'Playfair Display', serif;
+  color: black;
 }
